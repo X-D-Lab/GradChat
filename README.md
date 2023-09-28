@@ -1,5 +1,23 @@
-<h1 align="center">GradChat（锦鲤）: 考试大模型</h1>
+<h1 align="center">GradChat(锦鲤): 考试大模型</h1>  
 
+## 推理脚本  
+
+```
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers.generation import GenerationConfig
+
+model_dir = snapshot_download("thomas/test", revision = 'v1.0.10')
+
+tokenizer = AutoTokenizer.from_pretrained(model_dir,trust_remote_code=True)
+
+model = AutoModelForCausalLM.from_pretrained(model_dir, device_map="auto", bf16=True, trust_remote_code=True).eval()
+
+model.generation_config = GenerationConfig.from_pretrained(model_dir, trust_remote_code=True) 
+
+response, history = model.chat(tokenizer, "你好", history=None)
+print(response)
+
+```
 
 ## 👨‍💻 研发团队
 
