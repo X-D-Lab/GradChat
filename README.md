@@ -5,6 +5,7 @@
 ```
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.generation import GenerationConfig
+from modelscope import snapshot_download
 
 model_dir = snapshot_download("thomas/test", revision = 'v1.0.10')
 
