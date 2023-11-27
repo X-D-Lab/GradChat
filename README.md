@@ -11,7 +11,7 @@
 🙅‍ 此外，本模型还依托[MindChat（漫谈）心理大模型](https://github.com/X-D-Lab/MindChat)强大的**情感支持**和[Sunsimiao（孙思邈）医学大模型](https://github.com/X-D-Lab/Sunsimiao)的**医疗服务**，为莘莘学子和各行各业工作者提供身心健康的**全面服务**。
 
 
-👏 更为优质、安全、温暖的模型正在赶来的路上，欢迎关注：[MindChat Github](https://github.com/X-D-Lab/MindChat)
+👏 更为优质、安全、温暖的模型正在赶来的路上，欢迎关注：[GradChat Github](https://github.com/X-D-Lab/GradChatt)
 
 
 
